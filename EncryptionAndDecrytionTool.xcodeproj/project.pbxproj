@@ -14,6 +14,7 @@
 		02A21C7E1D3F760100C711AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A21C7C1D3F760100C711AF /* Main.storyboard */; };
 		02A21C891D3F760100C711AF /* EncryptionAndDecrytionToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A21C881D3F760100C711AF /* EncryptionAndDecrytionToolTests.m */; };
 		02A21C941D3F760100C711AF /* EncryptionAndDecrytionToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A21C931D3F760100C711AF /* EncryptionAndDecrytionToolUITests.m */; };
+		02A21D2B1D46FEE200C711AF /* NSData+Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A21D2A1D46FEE200C711AF /* NSData+Encryption.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		02A21C8F1D3F760100C711AF /* EncryptionAndDecrytionToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncryptionAndDecrytionToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02A21C931D3F760100C711AF /* EncryptionAndDecrytionToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncryptionAndDecrytionToolUITests.m; sourceTree = "<group>"; };
 		02A21C951D3F760100C711AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02A21D291D46FEE200C711AF /* NSData+Encryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Encryption.h"; sourceTree = "<group>"; };
+		02A21D2A1D46FEE200C711AF /* NSData+Encryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Encryption.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				02A21C721D3F760100C711AF /* AppDelegate.m */,
 				02A21C771D3F760100C711AF /* ViewController.h */,
 				02A21C781D3F760100C711AF /* ViewController.m */,
+				02A21D291D46FEE200C711AF /* NSData+Encryption.h */,
+				02A21D2A1D46FEE200C711AF /* NSData+Encryption.m */,
 				02A21C7A1D3F760100C711AF /* Assets.xcassets */,
 				02A21C7C1D3F760100C711AF /* Main.storyboard */,
 				02A21C7F1D3F760100C711AF /* Info.plist */,
@@ -269,6 +274,7 @@
 				02A21C791D3F760100C711AF /* ViewController.m in Sources */,
 				02A21C761D3F760100C711AF /* main.m in Sources */,
 				02A21C731D3F760100C711AF /* AppDelegate.m in Sources */,
+				02A21D2B1D46FEE200C711AF /* NSData+Encryption.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +495,7 @@
 				02A21C9A1D3F760100C711AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02A21C9B1D3F760100C711AF /* Build configuration list for PBXNativeTarget "EncryptionAndDecrytionToolTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +504,7 @@
 				02A21C9D1D3F760100C711AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02A21C9E1D3F760100C711AF /* Build configuration list for PBXNativeTarget "EncryptionAndDecrytionToolUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +513,7 @@
 				02A21CA01D3F760100C711AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
