@@ -11,10 +11,9 @@
 #import "NSData+Encryption.h"
 
 @interface ViewController ()
-@property (weak) IBOutlet NSTextField *inputField;
-@property (weak) IBOutlet NSTextField *keyField;
-
+@property (unsafe_unretained) IBOutlet NSTextView *inputTextView;
 @property (unsafe_unretained) IBOutlet NSTextView *outputTextView;
+@property (unsafe_unretained) IBOutlet NSTextView *keyTextView;
 
 @end
 
@@ -35,8 +34,8 @@
 
 - (IBAction)encrypt:(id)sender {
     
-    NSData *dataIn = [self.inputField.stringValue dataUsingEncoding:NSUTF8StringEncoding];
-    NSString *key = self.keyField.stringValue;
+    NSData *dataIn = [self.inputTextView.string dataUsingEncoding:NSUTF8StringEncoding];
+    NSString *key = self.keyTextView.string;
     
     NSData *encryptedData = [dataIn encryptedWith3DESUsingKey:key andIV:nil];
     
@@ -52,11 +51,9 @@
 //    //decode base64
 //    NSData *dataIn = [[NSData alloc] initWithBase64EncodedData:dataInBase64Encoded options:NSDataBase64DecodingIgnoreUnknownCharacters];
     
-    NSLog(@"input:%@", self.inputField.stringValue);
+    NSData *dataIn = [[NSData alloc] initWithBase64EncodedString:self.inputTextView.string options:NSDataBase64DecodingIgnoreUnknownCharacters];
     
-    NSData *dataIn = [[NSData alloc] initWithBase64EncodedString:self.inputField.stringValue options:NSDataBase64DecodingIgnoreUnknownCharacters];
-    
-    NSString *key = self.keyField.stringValue;
+    NSString *key = self.keyTextView.string;
     
     NSData *decryptedData = [dataIn decryptedWith3DESUsingKey:key andIV:nil];
     

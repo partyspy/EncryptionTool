@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
@@ -785,6 +785,9 @@
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
+                                                <connections>
+                                                    <action selector="encrypt:" target="XfG-lQ-9wD" id="TFR-g9-VLt"/>
+                                                </connections>
                                             </button>
                                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HEF-mD-7f6">
                                                 <rect key="frame" x="-6" y="-7" width="91" height="32"/>
@@ -792,6 +795,9 @@
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
+                                                <connections>
+                                                    <action selector="decrypt:" target="XfG-lQ-9wD" id="vQH-nt-FrG"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -832,6 +838,11 @@
                             <constraint firstItem="MZF-wG-9md" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="Wll-AT-a00"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="inputTextView" destination="pC8-pb-LtG" id="2Ac-xQ-EKU"/>
+                        <outlet property="keyTextView" destination="Daw-SV-vYN" id="JP6-7s-2GS"/>
+                        <outlet property="outputTextView" destination="qms-qG-nj0" id="es6-ON-0Fe"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

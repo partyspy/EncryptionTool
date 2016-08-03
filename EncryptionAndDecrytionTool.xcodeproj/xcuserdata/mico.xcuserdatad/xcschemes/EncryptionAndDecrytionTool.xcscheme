@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "02A21C6D1D3F760100C711AF"
+               BuildableName = "EncryptionAndDecrytionTool.app"
+               BlueprintName = "EncryptionAndDecrytionTool"
+               ReferencedContainer = "container:EncryptionAndDecrytionTool.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "02A21C831D3F760100C711AF"
+               BuildableName = "EncryptionAndDecrytionToolTests.xctest"
+               BlueprintName = "EncryptionAndDecrytionToolTests"
+               ReferencedContainer = "container:EncryptionAndDecrytionTool.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "02A21C8E1D3F760100C711AF"
+               BuildableName = "EncryptionAndDecrytionToolUITests.xctest"
+               BlueprintName = "EncryptionAndDecrytionToolUITests"
+               ReferencedContainer = "container:EncryptionAndDecrytionTool.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "02A21C6D1D3F760100C711AF"
+            BuildableName = "EncryptionAndDecrytionTool.app"
+            BlueprintName = "EncryptionAndDecrytionTool"
+            ReferencedContainer = "container:EncryptionAndDecrytionTool.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "02A21C6D1D3F760100C711AF"
+            BuildableName = "EncryptionAndDecrytionTool.app"
+            BlueprintName = "EncryptionAndDecrytionTool"
+            ReferencedContainer = "container:EncryptionAndDecrytionTool.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "02A21C6D1D3F760100C711AF"
+            BuildableName = "EncryptionAndDecrytionTool.app"
+            BlueprintName = "EncryptionAndDecrytionTool"
+            ReferencedContainer = "container:EncryptionAndDecrytionTool.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
